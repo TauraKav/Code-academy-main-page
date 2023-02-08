@@ -1,39 +1,4 @@
-$width-xl: 949px;
-$width-md: 899px;
-$width-sm: 749px;
-$width-xs: 599px;
-$width-xxs: 449px;
-
-@mixin xl {
-  @media (max-width: $width-xl) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media (max-width: $width-md) {
-    @content;
-  }
-}
-
-@mixin sm {
-  @media (max-width: $width-sm) {
-    @content;
-  }
-}
-
-@mixin xs {
-  @media (max-width: $width-xs) {
-    @content;
-  }
-}
-
-@mixin xxs {
-  @media (max-width: $width-xxs) {
-    @content;
-  }
-}
-
+@use'sass/responsive';
 
 body {
   margin: 0;
@@ -50,7 +15,7 @@ body {
 
 
   .main-navigation {
-    @include md {
+    @include responsive.md {
       display: none;
     }
 
@@ -91,7 +56,7 @@ body {
   .hamburger-menu {
     display: none;
 
-    @include md {
+    @include responsive.md {
       width: 50px;
       height: 45px;
       display: flex;
@@ -100,7 +65,7 @@ body {
     }
 
     .hamburger-line {
-      @include md {
+      @include responsive.md {
         height: 5px;
         background: black;
         border-radius: 20px;
@@ -122,7 +87,7 @@ body {
     padding-right: 30px;
     padding-left: 30px;
 
-   @include xxs {
+   @include responsive.xxs {
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -132,7 +97,7 @@ body {
       margin-bottom: 386px;
       margin-left: 100px;
 
-      @include sm {
+      @include responsive.sm {
         margin-left: 0;
         margin-bottom: 150px;
       }
@@ -142,10 +107,10 @@ body {
         margin-top: 0;
         margin-bottom: 10px;
 
-        @include sm {
+        @include responsive.sm {
           font-size: 65px;
         }
-        @include xxs {
+        @include responsive.xxs {
           font-size: 45px;
         }
       }
@@ -161,17 +126,17 @@ body {
       display: flex;
       margin-left: 100px;
 
-      @include xl {
+      @include responsive.xl {
         gap: 60px;
         margin-right: 20px;
       }
 
-      @include sm {
+      @include responsive.sm {
         margin-right: 0;
         margin-left: 0;
       }
 
-     @include xs {
+     @include responsive.xs {
         grid-template-columns: 1fr;
       }
 
@@ -233,10 +198,10 @@ body {
       margin-bottom: 74px;
       margin-top: 0;
 
-      @include sm {
+      @include responsive.sm {
         font-size: 60px;
       }
-     @include xxs {
+     @include responsive.xxs {
         font-size: 35px;
       }
     }
@@ -244,11 +209,11 @@ body {
     .stats-wrapper {
       padding-left: 200px;
 
-      @include md {
+      @include responsive.md {
         padding-left: 100px;
       }
 
-     @include sm {
+     @include responsive.sm {
         padding-left: 0;
       }
 
@@ -271,11 +236,11 @@ body {
           grid-template-columns: 1fr 1fr;
           padding-right: 200px;
 
-          @include md {
+          @include responsive.md {
             margin-right: 0;
           }
 
-          @include xxs {
+          @include responsive.xxs {
             grid-template-columns: 1fr;
           }
 
@@ -287,7 +252,7 @@ body {
             .stats-value {
               font-size: 100px;
 
-              @include sm{
+              @include responsive.sm{
                 font-size: 80px;
               }
             }
@@ -295,7 +260,7 @@ body {
             .stats-value.smaller-text {
               font-size: 72px;
 
-              @include sm {
+              @include responsive.sm {
                 font-size: 60px;
               }
             }
