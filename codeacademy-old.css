@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    margin-bottom: 500px;
+  }
+  .container {
+    max-width: 1230px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .main-header {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} 
+
+  a.button,
+  a.header-button {
+    background-color: #1200ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    min-width: 145px;
+    text-align: center;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  a.button {
+    margin-top: 33px;
+    display: inline-block;
+  }
+  
+  a.button:hover {
+    background-color: #574aff;
+  }
+  
+  ul.main-menu {
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-left: 0;
+      display: flex;
+      column-gap: 20px;
+  }
+
+  a.menu-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+   
+  }
+  a.menu-link:hover {
+    opacity: 0.8;
+  }
+  .hero-box {
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 140px;
+  }
+  .page-title-wrapper {
+    max-width: 670px;
+    margin-bottom: 386px;
+    margin-left: 100px;
+  }
+  .page-title {
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .page-description {
+    font-size: 19px;
+    max-width: 370px;
+    line-height: 1.8;
+  }
+  .service-list {
+      display: flex;
+      margin-left: 100px;
+  }
+
+  .service-item-border {
+    border-right: solid 1px white;
+    padding-right: 115px;
+}
+.service-item {
+  padding-left: 115px;
+}
+
+.first-line {
+  margin-bottom: 0;
+}
+
+ .second-line {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+  .stats {
+    padding-top: 130px;
+    padding-bottom: 88px;
+  }
+  .section-title {
+    font-size: 72px;
+    margin-bottom: 74px;
+    margin-top: 0;
+  }
+  .stats-wrapper {
+    padding-left: 200px;
+  }
+  .stats-description {
+    max-width: 470px;
+  }
+  .stats-description p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .stats-list-wrapper {
+    margin-top: 88px;
+  }
+  ul.stats-list {
+    list-style-type: none;
+    padding-left: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-right: 200px;
+  }
+  
+  li.stats-item {
+    font-weight: 600;
+    margin-bottom: 45px;
+      align-self: center;
+  }
+  
+  .stats-value {
+    font-size: 100px;
+  }
+  .stats-value.smaller-text {
+    font-size: 72px;
+  }
+
+
+@media screen and (max-width: 899px) {
+.main.nav {
+  display:none;
+}
+  
+
+}
+
+@media screen and (max-width: 499px) {
+
+}
+
+@media screen and (max-width: 299px) {
+
+}
+
+/* MOBILE first pavyzdys */
+@media screen and (min-width: 300px) {
+
+}
+
